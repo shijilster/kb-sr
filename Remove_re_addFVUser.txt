@@ -1,0 +1,10 @@
+When a users password has been changed on the Active Directory, you can use this procedure to remove the user from FileVault and re-add it with his new password.
+
+sudo fdesetup remove -user username
+sudo fdesetup add -usertoadd username
+Enter the user name: adminusername
+Enter the password for user 'adminusername':
+Enter the password for the added user 'username':
+
+Where username is the username of the user you want to remove and re-add.
+And adminusername is the username of an administrative user.
